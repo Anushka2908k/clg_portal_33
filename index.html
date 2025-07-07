@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Portal</title>
+  <!--<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">-->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: palevioletred; /* ✅ Solid background color */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .logo {
+      width: 150px;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      max-width: 400px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    button {
+      margin: 10px 5px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 0.1s ease, background-color 0.3s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    .btn-blue { background-color: #007bff; }
+    .btn-green { background-color: #28a745; }
+    .btn-yellow { background-color: #ffc107; color: black; }
+    .btn-indigo { background-color: #6610f2; }
+    .btn-pink { background-color: #e83e8c; }
+    .btn-purple { background-color: #6f42c1; }
+  </style>
+</head>
+<body>
+
+  <!-- Logo -->
+  <img src="assets.jpeg" alt="College Logo" class="logo" />
+
+  <!-- Category Buttons -->
+  <div class="card">
+    <h2>Choose Your Category</h2>
+
+    <!-- Shared form.html page with category -->
+    <button onclick="location.href='form.html?category=Sports'" class="btn-blue">Sports</button>
+    <button onclick="location.href='form.html?category=Cultural'" class="btn-green">Cultural</button>
+    <button onclick="location.href='form.html?category=Technical Competition'" class="btn-pink">Technical Competition</button>
+
+    <!-- Separate pages -->
+    <button onclick="location.href='othercourse.html'" class="btn-yellow">Other Courses</button>
+    <button onclick="location.href='higher-studies.html'" class="btn-indigo">Higher Studies</button>
+    <button onclick="location.href='paper-publication.html'" class="btn-purple">Paper Publication</button>
+  </div>
+
+</body>
+</html>
+
+

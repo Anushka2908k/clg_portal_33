@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paper Publication Form</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f2f2f2;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 800px;
+      background: white;
+      padding: 30px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="url"],
+    input[type="month"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .checkbox-group {
+      margin-bottom: 20px;
+    }
+
+    .checkbox-group label {
+      font-weight: normal;
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    small {
+      display: block;
+      margin-top: -15px;
+      margin-bottom: 15px;
+      color: #666;
+      font-size: 12px;
+    }
+
+    button {
+      padding: 12px 20px;
+      background-color: #6f42c1;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+    }
+
+    button:hover {
+      background-color: #5a33a2;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Paper Publication Submission</h2>
+    <form>
+
+      <label for="studentName">Name of Student</label>
+      <input type="text" id="studentName" name="studentName" required>
+
+      <label for="title">Title of Research Paper Published</label>
+      <input type="text" id="title" name="title" required>
+
+      <label for="firstAuthor">First Author / Corresponding Author</label>
+      <input type="text" id="firstAuthor" name="firstAuthor" required>
+
+      <label for="journalName">Name of the Journal</label>
+      <input type="text" id="journalName" name="journalName" required>
+
+      <div class="checkbox-group">
+        <label>Whether Indexed In:</label><br>
+        <label><input type="checkbox" name="indexing" value="Scopus"> Scopus</label>
+        <label><input type="checkbox" name="indexing" value="WoS"> WoS</label>
+        <label><input type="checkbox" name="indexing" value="Pubmed"> Pubmed</label>
+        <label><input type="checkbox" name="indexing" value="UGC Care"> UGC Care</label>
+        <label><input type="checkbox" name="indexing" value="Peer Reviewed"> Peer Reviewed</label>
+      </div>
+
+      <label for="pubDate">Month and Year of Publication</label>
+      <input type="month" id="pubDate" name="pubDate" required>
+
+      <label for="issn">ISSN Number</label>
+      <input type="text" id="issn" name="issn" required>
+
+      <label for="volumeIssue">Volume and Issue</label>
+      <input type="text" id="volumeIssue" name="volumeIssue" placeholder="e.g., Volume 2, Issue 10" required>
+
+      <label for="impactFactor">Impact Factor</label>
+      <input type="text" id="impactFactor" name="impactFactor" required>
+
+      <label for="weblink">Research Paper Weblink</label>
+      <input type="url" id="weblink" name="weblink" required>
+      <small>(Do not provide ResearchGate link, except for UGC CARE / Peer Reviewed listed publication)</small>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
